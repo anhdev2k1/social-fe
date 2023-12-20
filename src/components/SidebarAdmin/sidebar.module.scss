@@ -1,0 +1,20 @@
+.sidebar_menu{
+    background-color: white;
+    border-left: 1px solid #e3e3e3;
+    // border-right: 1px solid #e3e3e3;
+    .sidebar_heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+        gap: 10px;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        img{
+            width: 120px;
+        }
+    }
+}

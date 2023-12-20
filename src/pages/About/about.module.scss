@@ -1,0 +1,27 @@
+@use "../../assets/globals/variable";
+.about {
+  width: 100%;
+  min-height: 20px;
+  background-image: url("../../assets/images/bg01.png");
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    .about_content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .about_heading {
+        font-size: 2rem;
+        font-weight: 600;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: variable.$base-color;
+        padding: 10px 0;
+      }
+      p {
+        font-size: 1.7rem;
+        margin: 10px 0;
+      }
+    }
+  }
+}

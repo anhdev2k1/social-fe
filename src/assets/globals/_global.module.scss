@@ -1,0 +1,43 @@
+@use "variable";
+@use "reset";
+@use "base";
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: variable.$base-background;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+
+:global(.ant-input) {
+  &:hover {
+    border: 1px solid black;
+  }
+  &:focus-within {
+    box-shadow: none;
+  }
+  &:focus {
+    border: 1px solid black;
+  }
+}
+:global(.ant-form-item-label) {
+  > label {
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: "Barlow", sans-serif;
+  }
+}
+:global(.ant-menu-title-content) {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+:global(.ant-menu .ant-menu-item-selected){
+  background-color: black;
+  color: white;
+}
+:global(.ant-menu .ant-menu-submenu-selected >.ant-menu-submenu-title){
+  color: black;
+}

@@ -1,0 +1,85 @@
+@use "../../assets/globals/variable";
+.service_container {
+  max-width: 1200px;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  .services_list {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: start;
+    .service_item {
+      width: calc(calc(100% / 2) - 20px);
+      min-height: 400px;
+      max-height: 400px;
+      background-image: url("../../assets/images/service.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      .serivce_content {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        height: 150px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        .service_heading {
+          font-size: 2rem;
+          font-weight: 600;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-image: variable.$base-color;
+          line-height: 3rem;
+          text-overflow: ellipsis;
+          overflow:hidden;
+          white-space: nowrap;
+          max-width: 100%;
+        }
+        .service_desc {
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: #333;
+          // display: -webkit-box;
+          text-overflow: ellipsis;
+          overflow:hidden;
+          white-space: nowrap;
+          max-width: 100%;
+        }
+        .service_btn {
+          width: 150px;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: black;
+          color: white;
+          border-radius: 40px;
+          margin-top: auto;
+          margin-bottom: 0;
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .services_list{
+    .service_item{
+      width: calc(100% / 1) !important;
+      // background-color: red;
+    }
+  }
+}
