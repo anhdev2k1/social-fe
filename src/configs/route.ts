@@ -23,6 +23,7 @@ export interface IRoutes {
   component: React.ComponentType;
   layout?: React.FC<IChildrenComponentProps> | null;
 }
+
 export const publicRoutes: IRoutes[] = [
   {
     path: "/login",
@@ -64,6 +65,9 @@ export const publicRoutes: IRoutes[] = [
     layout: DefaultLayout,
   },
   /*@Admin */
+];
+
+export const privateRoutes: IRoutes[] = [
   {
     path: "/admin",
     component: Dashboard,
@@ -89,5 +93,4 @@ export const publicRoutes: IRoutes[] = [
     component: CreatePost,
     layout: AdminLayout,
   },
-  
 ];

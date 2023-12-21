@@ -20,9 +20,8 @@
         font-size: 2rem;
         text-transform: uppercase;
         font-weight: 700;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-image: variable.$base-color;
+        color: black;
+        
       }
       .title {
         font-size: 6rem;
@@ -30,9 +29,7 @@
         line-height: 7.5rem;
 
         .gradient {
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-image: variable.$base-color;
+          color: red;
         }
       }
       .desc {
@@ -43,7 +40,7 @@
       .btn_one {
         width: 160px;
         height: 45px;
-        background-color: #333;
+        background-color: black;
         color: white;
         font-size: 1.7rem;
         display: flex;
@@ -77,10 +74,14 @@
       position: relative;
       text-align: center;
       z-index: 2;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       border-radius: 30px;
       backdrop-filter: 10px;
-      background-image: url("../../assets/images/bg-hero.jpg");
+      background-image: url("../../assets/images/bgDesign.png");
+      background-size: cover;
+      background-repeat: repeat-x;
+      // background-color: red; 
+      // box-shadow: rgba(255, 0, 0, 0.2) 40px 10px 69px 15px;
+
       background-size: cover;
       background-repeat: no-repeat;
       .hero_person {
@@ -190,9 +191,7 @@
     font-size: 1.7rem;
     text-transform: uppercase;
     font-weight: 700;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: variable.$base-color;
+    color: red;
     margin-bottom: 20px;
   }
   .title {
@@ -325,9 +324,7 @@
         font-weight: 600;
         line-height: 6rem;
         font-weight: 700;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-image: variable.$base-color;
+        color: red;
       }
       .aboutBtn {
         width: 150px;
@@ -355,7 +352,7 @@
   height: 350px;
   align-items: center;
   gap: 20px;
-  background-color: #4a1fff;
+  background-color: red;
   // background-color: red;
   opacity: 1;
   margin-top: 100px;
@@ -428,8 +425,8 @@
   }
 }
 .slide_list {
-  width: 1200px;
-  height: 350px;
+  max-width: 1200px;
+  min-height: 350px;
   margin-top: 40px;
   // background-color: #4A1FFF;
   border-radius: 10px;
@@ -446,7 +443,7 @@
       margin-left: 30px;
     }
     .slide_title {
-      max-width: 50%;
+      max-width: 700px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -514,11 +511,12 @@
           font-size: 2rem !important;
         }
         .title {
-          font-size: 3rem !important;
+          font-size: 2.5rem !important;
+          line-height: 4.5rem;
         }
         .desc {
-          font-size: 3rem !important;
-          max-width: 70%;
+          font-size: 1.6rem !important;
+          max-width: 90%;
           margin: 0 auto;
         }
         .btn_one {
@@ -527,32 +525,76 @@
         }
         .clients {
           margin: 50px auto;
+          .imageClients {
+            width: 150px;
+          }
+          span {
+            font-size: 1.7rem;
+          }
         }
       }
       .hero_right {
+        width: 380px;
         margin: 100px auto;
+        .hero_person {
+          img {
+            width: 300px;
+          }
+        }
       }
     }
   }
   .services {
     margin-top: 700px !important;
+    .container {
+      padding: 10px;
+      .heading {
+        font-size: 2rem;
+        padding: 15px 0;
+      }
+      .title {
+        font-size: 2.5rem;
+      }
+      .desc {
+        width: 90%;
+        font-size: 1.6rem;
+      }
+    }
     .service_flex {
       display: flex;
       flex-direction: column;
       width: 100%;
-      .service_left {
+      .service_left,
+      .service_right {
         width: 100% !important;
         padding: 0 !important;
+        padding: 15px 0;
+
+        img {
+          width: 50% !important;
+        }
+        .service_heading {
+          font-size: 2rem;
+        }
         .service_desc {
-          width: 80%;
+          width: 90%;
+          padding-bottom: 30px;
+          font-size: 1.6rem;
         }
       }
+
       .service_item {
         width: 100% !important;
         flex: 1 !important;
         padding: 0 !important;
+        gap: 20px;
+        .service_heading {
+          font-size: 2rem;
+        }
         .service_desc {
-          width: 80%;
+          width: 90%;
+          font-size: 1.6rem;
+          padding-bottom: 30px;
         }
       }
     }
@@ -569,13 +611,22 @@
     }
   }
   .about {
+    .about_left {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 90% !important;
+        text-align: center;
+      }
+    }
     .about_right {
       text-align: center;
       .heading {
-        font-size: 1.5rem;
+        font-size: 2rem !important;
       }
       .title {
-        font-size: 3rem !important;
+        font-size: 2.5rem !important;
+        line-height: 4rem !important;
       }
       .aboutBtn {
         margin: 0 auto;
@@ -587,9 +638,13 @@
     // padding: 0 30px;
     .slogan_title {
       position: relative;
+      top: 60px;
+      left: 0px;
       z-index: 2;
       .slogan_heading {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        text-transform: uppercase;
       }
     }
     .slogan_img {
@@ -600,16 +655,38 @@
       right: 0px !important;
     }
   }
+  .slider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .slide_list {
-    width: 100% !important;
-
+    width: 90% !important;
+    min-height: 350px !important;
     .slide_item {
+      width: 100%;
       flex-direction: column;
+      margin: 0 auto;
+      .slide_title {
+        // width: 450px !important;
+        min-height: 200px;
+        margin-top: 40px;
+        // position: absolute;
+        // bottom: -200px;
+        // left: 0;
+      }
+      .slide_content {
+        font-size: 1.4rem !important;
+        width: 100% !important;
+      }
     }
   }
-  .swiper-button-next,
-  .swiper-rtl .swiper-button-prev {
-    right: 60px !important;
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    right: 100px !important;
     left: auto !important;
+    
   }
 }

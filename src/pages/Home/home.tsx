@@ -3,13 +3,15 @@ import images from "../../assets/images/index";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import 'swiper/css/autoplay';
+
 import imagesInstance from "../../assets/images/index";
 
 const Home = () => {
@@ -141,9 +143,9 @@ const Home = () => {
                 </div>
                 <div
                   className={style.service_item}
-                  style={{ backgroundColor: "#4a1fff", color: "white" }}
+                  style={{ backgroundColor: "red", color: "white" }}
                 >
-                  <img src={images.asset6} alt="" />
+                  <img src={images.asset2} alt="" />
                   <h3 className={style.service_heading}>Tư vấn Nội dung</h3>
                   <p className={style.service_desc}>
                     Mở Rộng Phạm Vi Truyền Thông Xã Hội, Tăng Cường Nhận Thức,
@@ -196,13 +198,16 @@ const Home = () => {
           <h2>Cảm nhận khách hàng</h2>
           <Swiper
             // install Swiper modules
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={50}
             slidesPerView={1}
             navigation
-            pagination={{ clickable: true }}
+            // pagination={{ clickable: true }}
             className={style.slide_list}
-            style={{ padding: "0 20px" }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
           >
             <SwiperSlide className={style.slide_item}>
               <img src={imagesInstance.review1} alt="" />

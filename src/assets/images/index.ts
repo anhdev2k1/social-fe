@@ -23,7 +23,8 @@ const imagesInstance = {
   review2: require("./review2.jpg"),
   review3: require("./review3.jpg"),
   logoNgang: require("./logo-ngang.png"),
-  logoDoc: require("./logo-doc.png")
+  logoDoc: require("./logo-doc.png"),
+  logo: require("./logo.png")
 };
 
 export default imagesInstance;

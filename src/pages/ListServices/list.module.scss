@@ -36,9 +36,7 @@
         .service_heading {
           font-size: 2rem;
           font-weight: 600;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-image: variable.$base-color;
+          color: red;
           line-height: 3rem;
           text-overflow: ellipsis;
           overflow: hidden;
@@ -76,6 +74,7 @@
 
 @media only screen and (max-width: 600px) {
   .container{
+    padding: 0 15px;
     .services_list{
       .service_item{
         width: calc(100% / 1) !important;

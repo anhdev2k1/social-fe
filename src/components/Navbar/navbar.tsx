@@ -30,54 +30,40 @@ const Navbar = () => {
       },
     });
   };
-  const [openSidebar, setOpenSidebar] = useState<boolean>(false)
+  const [openSidebar, setOpenSidebar] = useState<boolean>(false);
   const handleToggleSidebar = () => {
-    setOpenSidebar(!openSidebar)
-  }
+    setOpenSidebar(!openSidebar);
+  };
 
-  
   return (
     <div className={style.navbar}>
       <div className={style.container1200}>
         <div className={style.container}>
           <Link to="/" className={style.logo}>
-            <img src={imagesInstance.logoNgang} alt="" />
+            <img src={imagesInstance.logo} alt="" />
+            <span>9AM Media</span>
           </Link>
           <div className={style.burger} onClick={handleToggleSidebar}>
-            <FontAwesomeIcon icon={faBars} />
-            <ul className={style.list} style={openSidebar ? {transform: "translateX(0)"} : {transform: "translateX(1000px)"}}>
-              <div className={style.close} onClick={handleToggleSidebar}>
-                <FontAwesomeIcon icon={faXmark} />
-              </div>
+            {openSidebar ?  <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
+            <ul
+              className={style.list}
+              style={
+                openSidebar
+                  ? { transform: "translateX(0)" }
+                  : { transform: "translateX(1000px)" }
+              }
+            >
               <li className={style.item}>Trang chủ</li>
               <Link to="/about" className={style.item}>
                 Về tôi
               </Link>
-              <li className={style.item}>
+              <Link to="/services" className={style.item}>
                 <span>Dịch vụ</span>
-                <FontAwesomeIcon icon={faChevronDown} />
-                <div className={style.navbar_dropdown}>
-                  <h3 className={style.navbarDropdown_heading}>
-                    Bên tôi chuyên cung cấp các dịch vụ:{" "}
-                  </h3>
-                  <ul className={style.dropdown_list}>
-                    {services.length > 0 &&
-                      services.map((service) => {
-                        return (
-                          <div
-                            className={style.dropdown_item}
-                            onClick={() => handleRedirectServices(service)}
-                          >
-                            <span>{service.name_service}</span>
-                            <FontAwesomeIcon icon={faArrowRight} />
-                          </div>
-                        );
-                      })}
-                  </ul>
-                </div>
-              </li>
+              </Link>
               <li className={style.item}>Bài viết</li>
-              <Link to="/contact" className={style.item}>Liên hệ</Link>
+              <Link to="/contact" className={style.item}>
+                Liên hệ
+              </Link>
             </ul>
           </div>
           <ul className={style.list}>
@@ -109,7 +95,9 @@ const Navbar = () => {
               </div>
             </li>
             <li className={style.item}>Bài viết</li>
-            <Link to="/contact" className={style.item}>Liên hệ</Link>
+            <Link to="/contact" className={style.item}>
+              Liên hệ
+            </Link>
           </ul>
 
           <div className={style.button}>
