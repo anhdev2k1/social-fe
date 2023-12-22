@@ -35,7 +35,7 @@ const Services = () => {
     <div className={style.services}>
       <Banner
         heading={`Các dịch vụ chính`}
-        description="Tiến Long Media chúng tôi chuyên cung cấp các dịch vụ mạng xã hội"
+        description="9AM Media chúng tôi chuyên cung cấp các dịch vụ mạng xã hội"
       />
       <div className={style.service_container}>
         <div className={style.services_list}>
@@ -48,7 +48,7 @@ const Services = () => {
                   <div className={style.serivce_content}>
                     <h3 className={style.service_heading}>{post?.title}</h3>
                     <p className={style.service_desc}>{post?.description}</p>
-                    <div className={style.service_btn} onClick={() => handleRedirectDetail(post)}>Learn More</div>
+                    <div className={style.button_main} onClick={() => handleRedirectDetail(post)}>Chi tiết</div>
                   </div>
                 </div>
               );

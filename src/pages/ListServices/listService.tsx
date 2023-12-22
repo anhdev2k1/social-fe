@@ -38,7 +38,7 @@ const ListService = () => {
                   <div className={style.serivce_content}>
                     <h3 className={style.service_heading}>{service?.name_service}</h3>
                     <div
-                      className={style.service_btn}
+                      className={style.button_main}
                       onClick={() => handleRedirectDetail(service)}
                     >
                       Chi tiết

@@ -24,6 +24,9 @@ const Footer = () => {
               <span>Mã số thuế: 0402217718</span>
             </div>
             <div className={style.footer_item}>
+              <span>Email: lienhe@9am.media</span>
+            </div>
+            <div className={style.footer_item}>
               <FontAwesomeIcon icon={faPhone} />
               <span>070.336.3333</span>
             </div>

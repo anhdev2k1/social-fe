@@ -9,13 +9,13 @@ const DefaultLayout: React.FC<IChildrenComponentProps> = ({ children }) => {
       <div style={{ paddingTop: "100px" }}>
         <div className="style.wrapper">
           <div className="wrapper">
-            <div className="ring">
+            <a href="tel:0703363333" className="ring">
               <div className="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
                 <div className="coccoc-alo-ph-circle"></div>
                 <div className="coccoc-alo-ph-circle-fill"></div>
                 <div className="coccoc-alo-ph-img-circle"></div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         {children}

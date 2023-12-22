@@ -100,7 +100,7 @@ const Navbar = () => {
             </Link>
           </ul>
 
-          <div className={style.button}>
+          <div className={style.button_main}>
             <span>Bắt đầu</span>
             <FontAwesomeIcon icon={faArrowRight} />
           </div>

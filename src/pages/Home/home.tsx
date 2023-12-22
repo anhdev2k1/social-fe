@@ -34,7 +34,7 @@ const Home = () => {
                 Hành Chinh Phục Sự Thành Công!
               </p>
 
-              <Link to="/services" className={style.btn_one}>
+              <Link to="/services" className={style.button_main}>
                 <span>Bắt đầu thôi</span>
               </Link>
               <div className={style.clients}>
@@ -169,7 +169,7 @@ const Home = () => {
                   Chiến lược truyền thông xã hội khiến khán giả muốn theo dõi và
                   tương tác với thương hiệu của bạn
                 </h1>
-                <button className={style.aboutBtn}>
+                <button className={style.button_main}>
                   <span>Đọc thêm</span>
                   <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </button>
@@ -226,7 +226,7 @@ const Home = () => {
               <img src={imagesInstance.review2} alt="" />
               <div className={style.slide_title}>
                 <p className={style.slide_content}>
-                  Số 1 về chất lượng, từ khi dùng dịch vụ bên Tiến Long Media,
+                  Số 1 về chất lượng, từ khi dùng dịch vụ bên 9AM Media,
                   doanh thu bán hàng tại shop mình tăng một cách bất ngờ. Mình
                   rất hài lòng về chất lượng dịch vụ và sự hỗ trợ nhiệt tình.
                 </p>
@@ -237,16 +237,16 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className={style.slide_item}>
-              <img src={imagesInstance.review3} alt="" />
+              <img src={imagesInstance.review4} alt="" />
               <div className={style.slide_title}>
                 <p className={style.slide_content}>
-                  Từ khi sử dụng dịch dịch vụ tại Tiến Long Media để hỗ trợ công
+                  Từ khi sử dụng dịch dịch vụ tại 9AM Media để hỗ trợ công
                   việc. Thật tuyệt vời số lượng người biết đến mình tăng nhanh
                   hơn hẳn. Và mình cũng thuận lợi hơn khi làm việc cũng như sử
                   dụng các trang mạng xã hội.
                 </p>
-                <p className={style.slide_name}>Angela Tường Vy</p>
-                <p className={style.slide_desc}>Idol Bigo live, Booking KOLs</p>
+                <p className={style.slide_name}>Thanh Đoàn Shop</p>
+                <p className={style.slide_desc}>Nghệ sĩ - Diễn viên</p>
               </div>
             </SwiperSlide>
           </Swiper>
