@@ -3,14 +3,20 @@ import images from "../../assets/images/index";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import 'swiper/css/autoplay';
+import "swiper/css/autoplay";
 
 import imagesInstance from "../../assets/images/index";
 
@@ -86,7 +92,7 @@ const Home = () => {
                 <div className={style.service_left}>
                   <img src={images.asset1} alt="" />
                   <h3 className={style.service_heading}>
-                    Kiểm tra truyền thông
+                  Quảng cáo Truyền thông Đa kênh Chuyên Nghiệp
                   </h3>
                   <p className={style.service_desc}>
                     Bước đầu tốt nhất để tiến đến bước tiếp theo mà bạn nên thực
@@ -98,11 +104,10 @@ const Home = () => {
                     <img src={images.asset5} alt="" />
                     <div className={style.service_title}>
                       <h3 className={style.service_heading}>
-                        Quản lý truyền thông xã hội
+                        Chăm sóc Fanpage trọn gói
                       </h3>
                       <p className={style.service_desc}>
-                        Mọi thứ bạn cần để thành công mỗi tháng trên các kênh
-                        của thương hiệu bạn.
+                        Mọi thứ bạn cần để tạo dựng fanpage và xây dựng riêng kênh thương hiệu bạn.
                       </p>
                     </div>
                   </div>
@@ -184,10 +189,10 @@ const Home = () => {
               <h1 className={style.slogan_heading}>
                 Bạn đã sẵn sàng để phát triển chưa?
               </h1>
-              <div className={style.slogan_btn}>
-                <span>Làm việc cùng chúng tôi</span>{" "}
+              <Link to="/salekitvn" className={style.slogan_btn}>
+                <p>Làm việc cùng chúng tôi</p>{" "}
                 <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-              </div>
+              </Link>
             </div>
             <div className={style.slogan_img}>
               <img src={images.banner2} alt="" />
@@ -213,40 +218,43 @@ const Home = () => {
               <img src={imagesInstance.review1} alt="" />
               <div className={style.slide_title}>
                 <p className={style.slide_content}>
-                  Mình sử dụng dịch vụ bên Long cũng gần 5 năm, cảm thấy chất
+                  Mình sử dụng dịch vụ bên 9AM cũng gần 5 năm, cảm thấy chất
                   lượng dịch vụ rất tốt, và được sự tư vấn tận tình. Mình cảm
                   thấy rất hài lòng có thể đây là nơi an toàn nhất mỗi khi mình
                   cần sự hỗ trợ.
                 </p>
-                <p className={style.slide_name}>Tăng Thiên Kim</p>
-                <p className={style.slide_desc}>Hot girl, người mẫu</p>
+                <p className={style.slide_name}>Lê Trùng Dương</p>
+                <p className={style.slide_desc}>Boss Cenlina</p>
+                <p className={style.stars}>⭐⭐⭐⭐⭐</p>
               </div>
             </SwiperSlide>
             <SwiperSlide className={style.slide_item}>
               <img src={imagesInstance.review2} alt="" />
               <div className={style.slide_title}>
                 <p className={style.slide_content}>
-                  Số 1 về chất lượng, từ khi dùng dịch vụ bên 9AM Media,
-                  doanh thu bán hàng tại shop mình tăng một cách bất ngờ. Mình
-                  rất hài lòng về chất lượng dịch vụ và sự hỗ trợ nhiệt tình.
+                  Số 1 về chất lượng, từ khi dùng dịch vụ bên 9AM Media, doanh
+                  thu bán hàng tại shop mình tăng một cách bất ngờ. Mình rất hài
+                  lòng về chất lượng dịch vụ và sự hỗ trợ nhiệt tình.
                 </p>
-                <p className={style.slide_name}>Dương Hoài Trâm</p>
+                <p className={style.slide_name}>Hương Bùi</p>
                 <p className={style.slide_desc}>
-                  CEO/ Owner/ Founder NGŨ CỐC Gia Truyền 7 Vị NAVAN
+                  Người truyền cảm hứng
                 </p>
+                <p className={style.stars}>⭐⭐⭐⭐⭐</p>
               </div>
             </SwiperSlide>
             <SwiperSlide className={style.slide_item}>
               <img src={imagesInstance.review4} alt="" />
               <div className={style.slide_title}>
                 <p className={style.slide_content}>
-                  Từ khi sử dụng dịch dịch vụ tại 9AM Media để hỗ trợ công
-                  việc. Thật tuyệt vời số lượng người biết đến mình tăng nhanh
-                  hơn hẳn. Và mình cũng thuận lợi hơn khi làm việc cũng như sử
-                  dụng các trang mạng xã hội.
+                  Từ khi sử dụng dịch dịch vụ tại 9AM Media để hỗ trợ công việc.
+                  Thật tuyệt vời số lượng người biết đến mình tăng nhanh hơn
+                  hẳn. Và mình cũng thuận lợi hơn khi làm việc cũng như sử dụng
+                  các trang mạng xã hội.
                 </p>
                 <p className={style.slide_name}>Thanh Đoàn Shop</p>
                 <p className={style.slide_desc}>Nghệ sĩ - Diễn viên</p>
+                <p className={style.stars}>⭐⭐⭐⭐⭐</p>
               </div>
             </SwiperSlide>
           </Swiper>

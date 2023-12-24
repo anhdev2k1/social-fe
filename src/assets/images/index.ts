@@ -19,13 +19,18 @@ const imagesInstance = {
   service: require('./service.jpg'),
   related: require('./related.jpg'),
   aboutme: require('./MARKETING-01.jpg'),
-  review1: require("./slider1.jpg"),
-  review2: require("./review2.jpg"),
+  review1: require("./review5.jpg"),
+  review2: require("./review6.jpg"),
   review3: require("./review3.jpg"),
   logoNgang: require("./logo-ngang.png"),
   logoDoc: require("./logo-doc.png"),
   logo: require("./logo.png"),
-  review4: require("./review4.jpg")
+  review4: require("./review4.jpg"),
+  salekitbanner: require("./salekit.png"),
+  salekit1: require("./1.png"),
+  salekit2: require("./2.png"),
+  salekit3: require("./3.png"),
+  salekit4: require("./4.png"),
 };
 
 export default imagesInstance;

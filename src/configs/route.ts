@@ -12,6 +12,7 @@ import Contact from "../pages/Contact/contact";
 // import ListServiceLayout from "../components/Layouts/ListServiceLayout/listService.layout";
 import Home from "../pages/Home/home";
 import ListService from "../pages/ListServices/listService";
+import SaleKit from "../pages/Salekit/salekit";
 import Services from "../pages/Services/services";
 
 export interface IChildrenComponentProps {
@@ -62,6 +63,12 @@ export const publicRoutes: IRoutes[] = [
   {
     path: "/contact",
     component: Contact,
+    layout: DefaultLayout,
+  },
+  
+  {
+    path: "/salekitvn",
+    component: SaleKit,
     layout: DefaultLayout,
   },
   /*@Admin */

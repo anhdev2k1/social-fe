@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import style from "./footer.module.scss";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import imagesInstance from "../../assets/images";
 const Footer = () => {
   return (
@@ -24,7 +24,7 @@ const Footer = () => {
               <span>Mã số thuế: 0402217718</span>
             </div>
             <div className={style.footer_item}>
-              <span>Email: lienhe@9am.media</span>
+              <span><FontAwesomeIcon icon={faEnvelope} />   lienhe@9am.media</span>
             </div>
             <div className={style.footer_item}>
               <FontAwesomeIcon icon={faPhone} />
