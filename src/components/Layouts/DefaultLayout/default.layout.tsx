@@ -1,7 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IChildrenComponentProps } from "../../../configs/route";
 import Footer from "../../Footer/footer";
 import Navbar from "../../Navbar/navbar";
 import "./default.scss";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 const DefaultLayout: React.FC<IChildrenComponentProps> = ({ children }) => {
   return (
     <div className="main__inner">
@@ -13,7 +15,9 @@ const DefaultLayout: React.FC<IChildrenComponentProps> = ({ children }) => {
               <div className="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
                 <div className="coccoc-alo-ph-circle"></div>
                 <div className="coccoc-alo-ph-circle-fill"></div>
-                <div className="coccoc-alo-ph-img-circle"></div>
+                <div className="coccoc-alo-ph-img-circle">
+                  <FontAwesomeIcon icon={faPhone} className="icon_phone"/>
+                </div>
               </div>
             </a>
           </div>
