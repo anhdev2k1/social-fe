@@ -1,7 +1,7 @@
 import axios, { AxiosError, InternalAxiosRequestConfig } from "axios";
 
 const axiosClient = axios.create({
-  baseURL: "https://social-be-anhdev2k1.vercel.app/api/v1",
+  baseURL: "https://social-be-nu.vercel.app/api/v1",
   headers: {
     "Content-Type": "application/json",
   },
