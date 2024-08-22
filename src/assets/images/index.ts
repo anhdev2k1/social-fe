@@ -24,7 +24,7 @@ const imagesInstance = {
   review3: require("./review3.jpg"),
   logoNgang: require("./logo-ngang.png"),
   logoDoc: require("./logo-doc.png"),
-  logo: require("./logo.png"),
+  logo: require("./logo-tienlong.png"),
   review4: require("./review4.jpg"),
   salekitbanner: require("./salekit.png"),
   salekit1: require("./1.png"),

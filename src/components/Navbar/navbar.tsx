@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className={style.container}>
           <Link to="/" className={style.logo}>
             <img src={imagesInstance.logo} alt="" />
-            <span>9AM Media</span>
+            {/* <span>Tiến Long Media</span> */}
           </Link>
           <div className={style.burger} onClick={handleToggleSidebar}>
             {openSidebar ?  <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}

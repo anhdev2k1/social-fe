@@ -35,7 +35,7 @@ const Services = () => {
     <div className={style.services}>
       <Banner
         heading={`Các dịch vụ chính`}
-        description="9AM Media chúng tôi chuyên cung cấp các dịch vụ mạng xã hội"
+        description="Tiến Long Media chúng tôi chuyên cung cấp các dịch vụ mạng xã hội"
       />
       <div className={style.service_container}>
         <div className={style.services_list}>

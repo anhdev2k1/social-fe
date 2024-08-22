@@ -6,7 +6,7 @@ const Contact = () => {
     <div className={style.contact}>
       <Banner
         heading="Sẵn sàng đưa hoạt động tiếp thị của bạn lên 1 tầm cao mới"
-        description="9AM Media"
+        description="Tiến Long Media"
       />
       <div className={style.container}>
         <div className={style.contact_form}>

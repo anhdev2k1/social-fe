@@ -32,7 +32,7 @@ const Home = () => {
               </h3>
               <h1 className={style.title}>
                 Nhận tiếp thị truyền thông xã hội tốt nhất{" "}
-                <p className={style.gradient}>với 9AM Media</p>
+                <p className={style.gradient}>với Tiến Long Media</p>
               </h1>
               <p className={style.desc}>
                 Thách thức Giới Hạn, Định hình Tương Lai. MMO Advertising - Nơi
@@ -232,7 +232,7 @@ const Home = () => {
               <img src={imagesInstance.review2} alt="" />
               <div className={style.slide_title}>
                 <p className={style.slide_content}>
-                  Số 1 về chất lượng, từ khi dùng dịch vụ bên 9AM Media, doanh
+                  Số 1 về chất lượng, từ khi dùng dịch vụ bên Tiến Long Media, doanh
                   thu bán hàng tại shop mình tăng một cách bất ngờ. Mình rất hài
                   lòng về chất lượng dịch vụ và sự hỗ trợ nhiệt tình.
                 </p>
@@ -247,7 +247,7 @@ const Home = () => {
               <img src={imagesInstance.review4} alt="" />
               <div className={style.slide_title}>
                 <p className={style.slide_content}>
-                  Từ khi sử dụng dịch dịch vụ tại 9AM Media để hỗ trợ công việc.
+                  Từ khi sử dụng dịch dịch vụ tại Tiến Long Media để hỗ trợ công việc.
                   Thật tuyệt vời số lượng người biết đến mình tăng nhanh hơn
                   hẳn. Và mình cũng thuận lợi hơn khi làm việc cũng như sử dụng
                   các trang mạng xã hội.

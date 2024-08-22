@@ -10,9 +10,9 @@ const Footer = () => {
           <div className={style.footer_column}>
             <div className={style.footer_logo}>
               <img src={imagesInstance.logo} alt="" />
-              <span>9AM Media</span>
+              <span>Tiến Long Media</span>
             </div>
-            <p className={style.footer_desc}>9AM MEDIA CO., LTD</p>
+            <p className={style.footer_desc}>Tiến Long Media CO., LTD</p>
 
             <div className={style.footer_item}>
               <span>
